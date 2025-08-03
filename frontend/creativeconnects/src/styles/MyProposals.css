@@ -1,0 +1,42 @@
+.my-proposals {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.proposal-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proposal-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .my-proposals {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* Center text globally */
+  }
+
+  .proposal-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .proposal-card h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+  }
+}

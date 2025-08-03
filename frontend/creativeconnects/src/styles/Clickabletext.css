@@ -1,0 +1,37 @@
+.Clickabletext {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.Clickabletext.clickable {
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.Clickabletext.clickable:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.Icon {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .Clickabletext {
+    padding: 6px 10px;
+    font-size: 14px;
+    flex-direction: column;
+    /* stack icon above text if needed */
+    gap: 4px;
+  }
+
+  .Icon {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,75 @@
+.Footer {
+    background-color:#00796b;
+    padding: 20px 0;
+  }
+  
+  .FooterContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .FooterColumn {
+    flex: 1;
+    margin: 10px 20px;
+    min-width: 200px;
+  }
+  
+  .FooterColumn h2 {
+
+    font-size: 24px;
+
+    color: #ffffff;
+    padding-bottom: 10px;
+
+
+  }
+  
+  .FooterColumn ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .FooterColumn ul li {
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  
+  
+  .SocialMediaLinks li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .SocialMediaLinks li a {
+    color: #ffffff !important;
+    text-decoration: none;
+  }
+  
+  .SocialMediaLinks li a:hover {
+    color: #007bff;
+  }
+
+  .Divider {
+    height: 1px; /* Thickness of the divider */
+    background-color: #ddd; /* Color of the divider */
+    border: none; /* Remove border if any */
+    margin: 20px 80px; /* Add spacing around the divider */
+  }
+
+  .FooterCopyright {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff !important;
+    margin-top: 20px;
+  }
+  
+  .FooterCopyright p {
+    margin: 0;
+  }
+  
+  

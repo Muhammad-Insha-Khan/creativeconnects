@@ -1,0 +1,64 @@
+/* Container styling */
+.image-uploader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent; /* Transparent background */
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styling */
+  .uploader-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .uploader-heading {
+    font-size: 10px;
+    margin: 0;
+    color: #333; /* Adjust color as needed */
+  }
+  
+  .file-input {
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .file-input:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+  }
+  
+  /* Image preview styling */
+  .image-preview {
+    margin-top: 15px;
+  }
+  
+  .image-preview h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  
+  .preview-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .preview-image {
+    width: 100px; /* Small preview size */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+  }
+  

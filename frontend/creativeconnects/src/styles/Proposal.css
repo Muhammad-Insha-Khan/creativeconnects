@@ -1,0 +1,42 @@
+.ProposalDivider {
+  height: 1px;
+  /* Thickness of the divider */
+  background-color: #ddd;
+  /* Color of the divider */
+  border: none;
+  /* Remove border if any */
+  margin: 0px 40px;
+  /* Add spacing around the divider */
+  max-width: 1000px;
+}
+
+.Proposalcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.Proposalcontainer h2 {
+  cursor: pointer;
+}
+
+.Proposalcolumn {
+  flex: 1;
+  text-align: center;
+}
+
+.Proposaldivider {
+  width: 1px;
+  background-color: #000;
+  height: 100%;
+}
+
+.Proposal {
+  max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  .Proposalcontainer h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+}

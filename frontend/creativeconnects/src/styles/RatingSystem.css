@@ -1,0 +1,132 @@
+/* General container */
+.rating-container {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+.rating-title,
+.rating-previous-title {
+    text-align: center;
+    color: #1e293b;
+}
+
+.rating-previous-title {
+    font-size: 1.1rem;
+}
+
+/* Dropdown & Inputs */
+.rating-select,
+.rating-email,
+.rating-comment {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.rating-select:focus,
+.rating-email:focus,
+.rating-comment:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* Buttons */
+.rating-search-button,
+.rating-submit {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rating-search-button {
+    background-color: #2563eb;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.rating-search-button:hover {
+    background-color: #1d4ed8;
+}
+
+.rating-submit {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+.rating-submit:hover {
+    background-color: #15803d;
+}
+
+/* Rating stars */
+.rating-stars {
+    margin-top: 0.5rem;
+}
+
+/* Previous Ratings */
+.rating-previous-entry {
+    background-color: #f9fafb;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 0.8rem;
+}
+
+.rating-average {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.rating-no-results {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+/* Error & Success */
+.rating-error {
+    color: #dc2626;
+    text-align: center;
+}
+
+.rating-success {
+    color: #16a34a;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .rating-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .rating-title {
+        font-size: 1.25rem;
+    }
+
+    .rating-previous-title {
+        font-size: 1rem;
+    }
+
+    .rating-submit,
+    .rating-search-button {
+        font-size: 0.95rem;
+    }
+
+    .rating-comment {
+        font-size: 0.95rem;
+    }
+}

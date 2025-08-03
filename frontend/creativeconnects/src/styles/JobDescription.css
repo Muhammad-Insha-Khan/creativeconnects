@@ -1,0 +1,118 @@
+.addJobDescription-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addJobDescription-container h2 {
+  font-size: 22px;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.addJobDescription-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.addJobDescription-info>div {
+  flex: 1 1 45%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.addJobDescription-dropdown {
+  padding: 10px 14px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+}
+
+.addJobDescription-dropdown option {
+  background-color: #fff;
+  color: #555;
+}
+
+.addJobDescription-textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #00796b;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 0 0 5px rgba(25, 149, 173, 0.2);
+  resize: vertical;
+}
+
+.addJobDescription-button {
+  align-self: flex-start;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .addJobDescription-container {
+    padding: 16px;
+    text-align: center;
+  }
+
+  .addJobDescription-container h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .addJobDescription-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    /* Ensure even spacing between items */
+  }
+
+  .addJobDescription-info>div {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    /* Remove any inherited margin */
+  }
+
+  .addJobDescription-textarea {
+    height: 70px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .addJobDescription-dropdown {
+    font-size: 14px;
+    padding: 8px 12px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .addJobDescription-dropdown option {
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .addJobDescription-button {
+    align-self: center;
+  }
+}

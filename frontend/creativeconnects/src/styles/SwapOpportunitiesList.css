@@ -1,0 +1,159 @@
+/* Container */
+.swap-list-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #004d40;
+  /* Dark teal */
+}
+
+/* Heading */
+.swap-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #00796b;
+  /* Teal */
+  margin-bottom: 30px;
+}
+
+/* Search Bar */
+.swap-search {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #b2dfdb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #e0f2f1;
+  /* Light teal background */
+  color: #004d40;
+  outline-color: #00796b;
+}
+
+/* Scrollable Container */
+.swap-scrollable {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-bottom: 15px;
+}
+
+/* Custom Scrollbar */
+.swap-scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.swap-scrollable::-webkit-scrollbar-thumb {
+  background-color: #00796b;
+  border-radius: 3px;
+}
+
+/* Swap Card */
+.swap-card {
+  background: #ffffff;
+  border-left: 5px solid #00796b;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.swap-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons Row */
+.swap-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.swap-btn {
+  padding: 10px 16px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.swap-btn:hover {
+  background-color: #005f53;
+}
+
+/* Date */
+.date-submitted {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Status Messages */
+.loading,
+.error,
+.no-data {
+  text-align: center;
+  margin-top: 50px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .swap-list-container {
+    padding: 0 10px;
+    margin: 30px auto;
+    text-align: center;
+    /* Center all text */
+  }
+
+  .swap-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .swap-search {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .swap-card {
+    padding: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+    /* Center card content */
+  }
+
+  .date-submitted {
+    text-align: center;
+  }
+
+  .swap-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .swap-btn {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .loading,
+  .error,
+  .no-data {
+    font-size: 1rem;
+    margin-top: 30px;
+    text-align: center;
+  }
+}

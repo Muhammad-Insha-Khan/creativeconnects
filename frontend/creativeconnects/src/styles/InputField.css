@@ -1,0 +1,31 @@
+/* Input styles */
+input {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+input:focus {
+    border-color: #1995ad;
+    box-shadow: 0 0 5px rgba(25, 149, 173, 0.5);
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 100%;
+        max-width: 500px;
+        padding: 16px;
+        font-size: 15px;
+        text-align: center;
+        /* Centering the input text */
+        margin: 16px 0;
+    }
+}

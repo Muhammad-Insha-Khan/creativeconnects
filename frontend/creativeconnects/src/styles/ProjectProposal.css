@@ -1,0 +1,110 @@
+.projectProposal-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.projectProposal-container h2 {
+  font-size: 22px;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.projectProposal-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.projectProposal-info>div {
+  flex: 1 1 45%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectProposal-dropdown {
+  padding: 10px 14px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+}
+
+.projectProposal-dropdown option {
+  background-color: #fff;
+  color: #555;
+}
+
+.projectProposal-textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #00796b;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 0 0 5px rgba(25, 149, 173, 0.2);
+  resize: vertical;
+}
+
+.projectProposal-button {
+  align-self: flex-start;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .projectProposal-container {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .projectProposal-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .projectProposal-info>div {
+    flex: 1 1 100%;
+    min-width: unset;
+    width: 100%;
+    align-items: center;
+  }
+
+  .projectProposal-dropdown {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-bottom: 40px;
+  }
+
+  .projectProposal-textarea {
+    width: 100%;
+    height: 70px;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .projectProposal-button {
+    align-self: center;
+  }
+
+  .error-text {
+    text-align: center;
+  }
+}

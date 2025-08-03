@@ -1,0 +1,185 @@
+.create-select {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 30px;
+  margin: 50px 180px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+  justify-content: cente;
+  /* Align items to the left */
+  align-items: center;
+  /* Vertically center the items */
+}
+
+.create-select:hover {
+  box-shadow: 0 4px 6px rgba(14, 54, 231, 0.15);
+  background-color: #00796b;
+
+}
+
+/* Change heading color on hover */
+.create-select:hover .create-select__heading {
+  color: white;
+}
+
+/* Change paragraph color on hover */
+.create-select:hover .create-select__text {
+  color: white;
+}
+
+/* Change button text and background on hover */
+.create-select:hover .create-select__button {
+  background-color: #004d40;
+  /* a darker shade */
+  color: white;
+  border-color: white;
+  /* if it has a border */
+}
+
+.create-select:hover .clickable-text {
+  color: #ffeb3b;
+  /* example: yellow on hover */
+}
+
+/* Change expandable paragraph text color on hover */
+.create-select:hover .paragraph-text {
+  color: #ffffff;
+  /* example: white */
+}
+
+.create-select__logo {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  padding-top: 0px;
+}
+
+.create-select__content {
+  flex-grow: 1;
+}
+
+.create-select__heading {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  /* Align heading text to the left */
+}
+
+
+.create-select__text {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0.25rem 0 0;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.create-select__button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.create-select__button:hover {
+  background-color: #2563eb;
+}
+
+.expandable-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Align left, or use center for center alignment */
+  gap: 10px;
+  /* Adds spacing between clickable text and paragraph */
+  margin: 20px;
+  padding: 18px;
+}
+
+.clickable-text {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.paragraph-text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .create-select {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    width: 90%;
+    gap: 1.25rem;
+    box-sizing: border-box;
+  }
+
+  .create-select__logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+
+  .create-select__heading {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .create-select__text {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .create-select__button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .create-selectexpandable-container {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .create-selectclickable-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .create-selectparagraph-text {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

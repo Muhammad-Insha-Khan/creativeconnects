@@ -1,0 +1,120 @@
+/* Ensure body and html take up the full screen */
+
+
+/* Container that wraps content */
+.welcome-container {
+  width: 100vw;
+  /* Full width of viewport */
+  height: 100vh;
+  /* Full height of viewport */
+  display: flex;
+  justify-content: center;
+  /* Horizontally center content */
+  align-items: center;
+  /* Vertically center content */
+  background-color: #ffffff;
+  /* White background */
+}
+
+/* Content section */
+.welcome-section {
+  text-align: center;
+  color: #333333;
+  /* Darker text for contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  /* Smooth fade transition */
+  padding: 20px;
+  /* Add some padding for spacing */
+}
+
+/* Heading styling */
+.welcome-section h1 {
+  font-size: 80px;
+  /* Increased font size */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 40px;
+  /* Increased margin to accommodate larger text */
+  color: #333333;
+  /* Dark text color */
+  animation: fadeIn 2s ease-out;
+  /* Fade in animation */
+}
+
+/* Accent color for part of the heading */
+.welcome-section h1 span {
+  color: #00bfae;
+  /* Lighter teal accent */
+}
+
+/* Paragraph styling */
+.welcome-section p {
+  font-size: 28px;
+  /* Increased font size */
+  color: #666666;
+  /* Light gray text for better contrast */
+  animation: fadeIn 3s ease-out;
+  /* Fade in animation */
+  max-width: 800px;
+  /* Optional: limit width to make text more readable */
+  line-height: 1.6;
+  /* Improve readability */
+}
+
+/* Sign-in form styles */
+.signin-section {
+  opacity: 0;
+  /* Hidden by default */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+
+  .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 5vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
+
+  .welcome-section {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .welcome-section h1 {
+    font-size: 2rem;
+    color: #00bfae;
+    margin-bottom: 1rem;
+  }
+
+  .welcome-section span.welcomepageSpan {
+    color: #00bfae;
+    /* accent */
+  }
+
+  .welcome-section p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+}

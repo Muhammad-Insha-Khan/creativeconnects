@@ -1,0 +1,92 @@
+/* General styling */
+.projects-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .projects-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project-card {
+    width: 30%;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .more-details-btn {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .more-details-btn:hover {
+    background-color: #00796b;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    width: 60%;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+
+  .projectbutton{
+    margin-top: 10px;
+    float: right;
+    width: 54%;
+}

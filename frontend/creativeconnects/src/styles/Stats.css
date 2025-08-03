@@ -1,0 +1,119 @@
+.stat {
+  display: flex;
+  justify-content: flex-end;
+  /* Aligns content to the right */
+  /* Ensures the container takes full width */
+
+}
+
+
+.stat-card {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(145deg, #00796b, #004d40);
+  /* Gradient background for depth */
+  color: white;
+  border-radius: 15px;
+  /* Soft rounded corners */
+  border: none;
+  gap: 20px;
+  max-width: 350px;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Enhanced shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  /* Smooth transition */
+  overflow: hidden;
+  /* Prevents content overflow */
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  /* Lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Stronger shadow */
+  background: linear-gradient(145deg, #004d40, #00796b);
+  /* Reversed gradient on hover */
+}
+
+.stat-card .stat-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-icon {
+  font-size: 3em;
+  /* Larger icon size */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Soft icon background */
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Shadow for icon */
+  flex-shrink: 0;
+  /* Prevent icon from shrinking */
+}
+
+.stat-heading {
+  font-size: 1.3em;
+  /* More prominent heading */
+  font-weight: 500;
+  /* Medium weight for heading */
+  margin: 5px 0;
+  letter-spacing: 1px;
+  /* Adds spacing between letters for style */
+}
+
+.stat-number {
+  font-size: 2em;
+  /* Larger stat number */
+  font-weight: 700;
+  /* Bold stat number */
+  margin-top: 5px;
+  color: #ffeb3b;
+  /* Yellow color for contrast */
+  letter-spacing: 2px;
+  /* Slight spacing to improve readability */
+}
+
+@media (max-width: 768px) {
+  .stat {
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+
+  .stat-card {
+    flex-direction: column;
+    width: 90%;
+    max-width: 100%;
+    margin: 12px auto;
+    padding: 16px;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .stat-icon {
+    font-size: 2.2em;
+    padding: 12px;
+    margin: 0 auto;
+  }
+
+  .stat-heading {
+    font-size: 1.1em;
+    margin: 4px 0;
+  }
+
+  .stat-number {
+    font-size: 1.6em;
+    margin-top: 4px;
+  }
+}

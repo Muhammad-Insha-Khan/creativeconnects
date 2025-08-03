@@ -1,0 +1,140 @@
+.usersearch-wrapper {
+    position: relative;
+    width: 130%;
+    max-width: 600px;
+    margin: 40px auto 0;
+}
+
+/* Unified Search Bar */
+.usersearch-bar {
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    padding: 0px;
+    box-shadow: 0 0 0 1px #ccc;
+    width: 600px;
+}
+
+.usersearch-input {
+    flex: 1;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.usersearch-button {
+    padding: 0 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    transition: color 0.2s ease;
+}
+
+.usersearch-button:hover {
+    color: #000;
+}
+
+/* Results Dropdown */
+.usersearch-results {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    width: 650px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Each result item as a full-width block */
+.usersearch-result-item {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* All result fields are inline */
+.usersearch-result-item .field-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #222;
+}
+
+/* Field label (e.g., Name:) */
+.usersearch-result-item .field-label {
+    font-weight: bold;
+    margin-right: 6px;
+    color: #555;
+}
+
+/* Field value (e.g., Alizain) */
+.usersearch-result-item .field-value {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .usersearch-wrapper {
+        width: 90%;
+        margin: 5vh auto 0;
+    }
+
+    .usersearch-bar {
+        flex-direction: column;
+        width: 100%;
+        box-shadow: 0 0 0 1px #ccc;
+        border-radius: 20px;
+    }
+
+    .usersearch-input {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .usersearch-button {
+        width: 100%;
+        padding: 0.8rem 0;
+        font-size: 1.1rem;
+        border-top: 1px solid #ccc;
+    }
+
+    .usersearch-results {
+        position: relative;
+        width: 100%;
+        max-height: 60vh;
+        top: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .usersearch-result-item {
+        padding: 1rem;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+
+    .usersearch-result-item .field-row {
+        flex-direction: column;
+        gap: 0.3rem;
+        font-size: 0.95rem;
+    }
+
+    .usersearch-result-item .field-label,
+    .usersearch-result-item .field-value {
+        display: block;
+        width: 100%;
+    }
+}

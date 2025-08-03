@@ -1,0 +1,378 @@
+/* Overall body styling */
+.Swapper-body {
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif;
+  /* Set a global font */
+  background-color: #f5f5f5;
+  /* Light background color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the registration form */
+.Swapper-container {
+  display: flex;
+  border: 1px solid #e1e1e1;
+  border-radius: 15px;
+  margin: 70px auto;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1250px;
+  width: 100%;
+  position: relative;
+  /* To position the floating circle within */
+}
+
+/* Left column - Swapper info area */
+.Swapper-col1 {
+  background-color: #00796b;
+  /* Dark cyan color */
+  padding: 30px;
+  width: 42%;
+
+  color: white;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Swapper-col1-h1 {
+  margin-bottom: 28px;
+  font-size: 38px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  animation: fadeIn 2s ease-out;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 70px 0px 70px;
+  animation: fadeIn 2s ease-out;
+  /* Fade-in animation */
+}
+
+.Swapper-col1-p {
+  font-size: 18px;
+  margin-bottom: 27px;
+  margin-left: 28px;
+  margin-right: 28px;
+  font-family: sans-serif;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 0px 30px 0px 30px;
+  animation: fadeIn 2s ease-out;
+  /* Fade-in animation */
+}
+
+/* Right column - Form area */
+.Swapper-col2 {
+  padding: 30px;
+  width: 58%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Swapper-col2-h1 {
+  color: #004d40;
+  /* Darker teal */
+  margin-bottom: 32px;
+  font-size: 38px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 2s ease-out;
+  /* Fade-in animation */
+}
+
+.Swapper-col2-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Swapper-col2-label {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.Swapper-col2 input,
+.Swapper-col2 select {
+  margin-top: 5px;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Swapper-col2 button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Swapper-col2 button:hover {
+  background-color: #00796b;
+}
+
+/* For input fields in a row */
+.Swapper-input-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Swapper-input-half {
+  width: 48%;
+}
+
+/* Container for the buttons */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Register button styles */
+.Swapper-submit {
+  background-color: #FF9635;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Clear button styles */
+.Swapper-clear {
+  background-color: #FF9635;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Swapper-clear .clear-icon {
+  margin-right: 5px;
+  font-size: 18px;
+  /* Larger cross icon */
+}
+
+/* Button hover effects */
+.Swapper-submit:hover,
+.Swapper-clear:hover {
+  opacity: 0.9;
+}
+
+/* Floating circle */
+.floating-circle {
+  position: absolute;
+  background-color: #4caf50;
+  /* Green circle */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 15px;
+  right: -40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Animation for floating circle */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.Phoneinput input {
+  height: 32px;
+  font-size: 14px;
+  padding: 4px 10px;
+  width: 180px;
+}
+
+.Phoneinput .flag-dropdown {
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  .Swapper-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    padding: 2rem 1rem;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+  }
+
+  .Swapper-col1 {
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .SwapperWelHeading {
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .SwapperWelPara {
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .Swapper-col2 {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .Swapper-col2-head {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .Swapper-col2-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Swapper-label {
+    width: 100%;
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .Swapper-col2 input,
+  .Swapper-col2 select {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .Swapper-input-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .Swapper-input-half {
+    width: 100%;
+  }
+
+  .Swapper-back-btn,
+  .Swapper-submit,
+  .Swapper-clear,
+  .Swapper-col2 button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .Swapper-button-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .Swapper-clear .Swapper-clear-icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+
+  .floating-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .react-tel-input {
+    width: 100% !important;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .react-tel-input .form-control {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3.5rem !important;
+    font-size: 1rem !important;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .react-tel-input .flag-dropdown {
+    left: 10px !important;
+  }
+}

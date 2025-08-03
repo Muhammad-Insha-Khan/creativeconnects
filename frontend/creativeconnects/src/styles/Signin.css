@@ -1,0 +1,329 @@
+.Signincontainer {
+    display: flex;
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+    margin: 70px auto;
+    /* Center horizontally */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1250px;
+    /* Increased max-width slightly */
+    width: 100%;
+    /* Increased the container width to 90% */
+}
+
+.Signincol1 {
+    background-color: #00796b;
+    /* Dark cyan */
+    padding: 30px;
+    width: 42%;
+    /* Slightly increased width */
+    padding-top: 50px;
+    /* Adjusted padding */
+    padding-bottom: 50px;
+    /* Adjusted padding */
+    color: white;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    /* Ensure content aligns vertically */
+    justify-content: center;
+    /* Vertically center the content */
+    align-items: center;
+
+}
+
+.signin-col1-heading {
+    margin-bottom: 28px;
+    font-size: 44px;
+    /* Slightly increased font size */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+}
+
+.signin-col1-para {
+    font-size: 18px;
+    /* Slightly increased font size */
+    margin-bottom: 27px;
+    margin-left: 28px;
+    margin-right: 28px;
+    font-family: sans-serif;
+    color: #e0e0e0;
+    animation: fadeIn 2s ease-out;
+    display: flex;
+    text-align: center;
+
+}
+
+.UserType-Selection {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.UserType-Heading {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.UserType-Options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.UserType-Option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    border: 2px solid #004d40;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #004d40;
+    background: white;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.UserType-Option input {
+    display: none;
+}
+
+.UserType-Option:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+.UserType-Option.selected {
+    background: linear-gradient(90deg, #004d40, #00695c);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 77, 64, 0.4);
+}
+
+
+
+.Signincol2 {
+    padding: 30px;
+    width: 58%;
+    /* Slightly increased width */
+    padding-top: 50px;
+    /* Adjusted padding */
+    padding-bottom: 50px;
+    /* Adjusted padding */
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    /* Ensure content aligns vertically */
+    justify-content: center;
+    /* Vertically center the content */
+    align-items: center;
+    /* Horizontally center the content */
+}
+
+.sign-col2-heading {
+    color: #004d40;
+    /* Darker teal */
+    margin-bottom: 32px;
+    font-size: 38px;
+    /* Slightly increased font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 2s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.Signin-col2-lastpara {
+    font-size: 15px;
+    /* Slightly increased font size */
+    font-family: sans-serif;
+    color: #707070;
+    margin: 95px 40px 0px 40px;
+    animation: fadeIn 2s ease-out;
+    text-align: center;
+
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+/* Floating Circle Animation */
+.Signinfloating-circle {
+    position: absolute;
+    width: 190px;
+    /* Slightly increased size */
+    height: 190px;
+    background-color: #004d40;
+    /* Dark cyan circle */
+    border-radius: 50%;
+    animation: circle-animation 14s ease-in-out infinite;
+    z-index: -1;
+}
+
+.Signin-Email-Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px 0px 40px;
+    height: 200vh;
+    background-color: #004d40;
+
+}
+
+.Signin-Email {
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+    margin: 0px 40px 0px 40px;
+}
+
+.Signin-Pass {
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+    margin: 0px 40px 0px 40px;
+}
+
+@keyframes circle-animation {
+    0% {
+        bottom: 50%;
+        left: 100%;
+        transform: translateX(-50%);
+    }
+
+    50% {
+        bottom: 100%;
+        left: 70%;
+    }
+
+    100% {
+        bottom: 110%;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .sign {
+        height: 100%;
+    }
+
+    .Signincontainer {
+        flex-direction: column;
+        width: 95%;
+        height: 100%;
+        margin: 20px auto;
+        border-radius: 15px;
+        box-shadow: none;
+        overflow: hidden;
+    }
+
+    .Signincol1,
+    .Signincol2 {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Signincol1 {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .signin-col1-heading {
+        font-size: 2rem;
+        margin-bottom: 16px;
+        justify-content: center;
+    }
+
+    .signin-col1-para {
+        font-size: 1rem;
+        margin: 0 15px 20px;
+        text-align: center;
+    }
+
+    .sign-col2-heading {
+        font-size: 1.6rem;
+        margin-bottom: 24px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Signin-col2-lastpara {
+        font-size: 0.95rem;
+        margin: 30px 15px 0;
+        text-align: center;
+    }
+
+    .UserType-Selection {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .UserType-Heading {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .UserType-Options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .UserType-Option {
+        width: 80%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .Signin-Email-Wrapper {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 20px 15px;
+        height: auto;
+        box-sizing: border-box;
+        background-color: #004d40;
+    }
+
+    .Signin-Email,
+    .Signin-Pass {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+        padding: 10px;
+        height: 40px;
+        box-sizing: border-box;
+    }
+
+    .submit {
+        margin-top: 20px;
+    }
+
+    .floating-circle {
+        display: none;
+    }
+}

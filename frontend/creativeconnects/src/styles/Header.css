@@ -1,0 +1,103 @@
+/* Header.css */
+.desktop-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vh 5vw;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  height: 12vh;
+  width: 120px;
+  background-image: url(creativeconnects.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: -1vw;
+  /* slight shift to the left */
+}
+
+
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  /* Hide desktop on mobile */
+  .desktop-header {
+    display: none;
+  }
+
+  /* Show mobile version */
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    /* Margin left & right added */
+    background-color: #f8f9fa;
+    gap: 8px;
+  }
+
+  .headersearch-bar {
+    flex: 1;
+    margin: 0 8px;
+  }
+
+  .mobile-dropdown {
+    display: block;
+    position: relative;
+    /* Required to contain the dropdown */
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .headersearch-bar input {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+
+  /* Fix dropdown menu overflow on mobile */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    min-width: 180px;
+    max-width: 90vw;
+    /* prevent overflow */
+    overflow-x: auto;
+    border-radius: 8px;
+  }
+}

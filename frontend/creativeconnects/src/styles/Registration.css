@@ -1,0 +1,120 @@
+/* Base Styling */
+/* body{
+    margin: 50px;
+      align-items: center; 
+      height: 100vh;        
+      text-align: center;
+  
+  }   */
+.registration-flow {
+  justify-content: left;
+}
+
+.select-options-container,
+.registration-form-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  /* Hidden by default */
+  transform: translateY(20px);
+  /* Start slightly off-screen */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 0;
+  /* Ensure stacking is correct */
+}
+
+/* Make the visible container appear */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 1;
+  /* Bring to front */
+}
+
+/* Keep the hidden container invisible */
+.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+  z-index: 0;
+  /* Send to back */
+}
+
+.Registration-back {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 30px;
+
+}
+
+.registrationgradient-text {
+  font-size: 70px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #004d40, #00695c, #26c6da, #004d40);
+  /* full loop */
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 6s linear infinite;
+  margin-left: 50px;
+  align-items: center;
+  text-align: center;
+  margin-top: 120px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .registration-flow {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registrationgradient-text {
+    font-size: 2rem;
+    /* Smaller for mobile */
+    margin-left: 0;
+    margin-top: 3rem;
+    text-align: center;
+    padding: 0 1rem;
+    line-height: 1.2;
+  }
+
+  .Registration-back {
+    margin-bottom: 1.5rem;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .select-options-container,
+  .registration-form-container {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* Optional: avoid text overflow if large heading content */
+  .registrationgradient-text {
+    word-wrap: break-word;
+    max-width: 90vw;
+  }
+}
