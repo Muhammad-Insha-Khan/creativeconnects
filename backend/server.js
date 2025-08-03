@@ -1,5 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const Groq = require('groq-sdk');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -20,7 +21,7 @@ const chatRoutes = require('./routes/chatRoutes');
 const axios = require("axios");
 
 require("dotenv").config();
-
+dotenv.config()
 // Connect to MongoDB
 connectDB();
 
@@ -109,7 +110,7 @@ const translateMessage = async (message, targetLanguage) => {
 
   try {
     const response = await axios.post(
-      'https://api.groq.com/openai/v1/chat/completions',
+      process.env.GROQ_API_URL,
       {
         model: 'llama3-70b-8192',
         messages: [
@@ -126,7 +127,7 @@ const translateMessage = async (message, targetLanguage) => {
       },
       {
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
           'Content-Type': 'application/json',
         },
       }

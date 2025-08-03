@@ -1,10 +1,14 @@
+const dotenv = require('dotenv');
 const Groq = require('groq-sdk');
 const Buyer = require('../models/Buyer');
 const Seller = require('../models/Seller');
 const SkillSwapper = require('../models/SkillSwapper');
 
+dotenv.config();
+
 const groqClient = new Groq.Groq({
-  apiKey: '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', // 🔐 move to .env in production
+   apiKey: process.env.GROQ_API_KEY,
+   // 🔐 move to .env in production
 });
 
 const getModelByRole = (role) => {
