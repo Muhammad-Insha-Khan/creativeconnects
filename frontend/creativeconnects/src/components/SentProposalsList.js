@@ -14,7 +14,7 @@ const SentProposalsList = () => {
         const seller = JSON.parse(localStorage.getItem('user'));
         const sellerId = seller?._id || seller?.id;
 
-        const res = await axios.get(`http://localhost:5000/api/buyer/seller-proposals?sellerId=${sellerId}`, {
+        const res = await axios.get(`https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/buyer/seller-proposals?sellerId=${sellerId}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
 
