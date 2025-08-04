@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import ReactStars from 'react-rating-stars-component';
 import "../styles/RatingSystem.css"
+
 const RatingSystem = ({ currentUserId, currentUserRole }) => {
     const [email, setEmail] = useState('');
     const [rating, setRating] = useState(1);
@@ -76,6 +76,28 @@ const RatingSystem = ({ currentUserId, currentUserRole }) => {
             ).toFixed(1)
             : null;
 
+    // Custom Star Rating UI
+    const renderStars = () => {
+        const stars = [];
+        for (let i = 1; i <= 5; i++) {
+            stars.push(
+                <span
+                    key={i}
+                    onClick={() => setRating(i)}
+                    style={{
+                        fontSize: '30px',
+                        cursor: 'pointer',
+                        color: i <= rating ? '#ffd700' : '#ccc',
+                        marginRight: '5px'
+                    }}
+                >
+                    ★
+                </span>
+            );
+        }
+        return stars;
+    };
+
     return (
         <div className="rating-container max-w-md mx-auto p-6 bg-white shadow-md rounded-lg">
             <h3 className="rating-title text-2xl font-semibold mb-4 text-center">
@@ -114,14 +136,7 @@ const RatingSystem = ({ currentUserId, currentUserRole }) => {
                     </p>
 
                     <label className="rating-label block mt-4 font-medium">Rating:</label>
-                    <ReactStars
-                        count={5}
-                        value={rating}
-                        onChange={setRating}
-                        size={30}
-                        activeColor="#ffd700"
-                        classNames="rating-stars"
-                    />
+                    <div className="rating-stars mb-3">{renderStars()}</div>
 
                     <textarea
                         value={comment}
@@ -158,10 +173,9 @@ const RatingSystem = ({ currentUserId, currentUserRole }) => {
                                 <strong>Rating:</strong> {r.rating}/5 <br />
                                 {r.comment && (
                                     <>
-                                        <strong>Comment:</strong> {r.comment} <br /><br></br>
+                                        <strong>Comment:</strong> {r.comment} <br /><br />
                                     </>
                                 )}
-
                             </div>
                         ))
                     )}
