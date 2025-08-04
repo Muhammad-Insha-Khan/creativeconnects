@@ -16,7 +16,7 @@ const Signin = () => {
     e.preventDefault();
     const apiUrl =
       userType === 'seller'
-        ? 'https://creativeconnects.inshakhanbhai78.repl.co/api/seller/signin'
+        ? 'https://cece364f-9505-4ba8-bfc2-5f7c78a75f2b-00-3mv3m5iuz7ehw.sisko.replit.dev//api/seller/signin'
         : userType === 'buyer'
           ? 'https://cece364f-9505-4ba8-bfc2-5f7c78a75f2b-00-3mv3m5iuz7ehw.sisko.replit.dev/api/buyer/signin'
           : 'http://localhost:5000/api/skillSwapper/signin'; // SkillSwapper sign-in URL
