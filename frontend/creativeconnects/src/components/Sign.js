@@ -18,7 +18,7 @@ const Signin = () => {
       userType === 'seller'
         ? 'https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/seller/signin'
         : userType === 'buyer'
-          ? 'https://cece364f-9505-4ba8-bfc2-5f7c78a75f2b-00-3mv3m5iuz7ehw.sisko.replit.dev/api/buyer/signin'
+          ? 'https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev//api/buyer/signin'
           : 'http://localhost:5000/api/skillSwapper/signin'; // SkillSwapper sign-in URL
 
     try {
