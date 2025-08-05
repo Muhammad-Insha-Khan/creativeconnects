@@ -18,7 +18,7 @@ const UploadedSwapsStats = () => {
           return;
         }
 
-        const res = await axios.get(`http://localhost:5000/api/skillswapper/count?userId=${userId}`);
+        const res = await axios.get(`https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/skillswapper/count?userId=${userId}`);
 
         if (res.data && typeof res.data.count === 'number') {
           setUploadCount(res.data.count);
