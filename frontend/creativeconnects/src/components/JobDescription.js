@@ -55,7 +55,7 @@ const JobDescription = () => {
     try {
       const token = localStorage.getItem('token');
 
-      const response = await axios.post('http://localhost:5000/api/buyer/add-job-description', jobData, {
+      const response = await axios.post('https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/buyer/add-job-description', jobData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'
