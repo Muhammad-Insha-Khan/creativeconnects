@@ -14,7 +14,7 @@ const RatingSystem = ({ currentUserId, currentUserRole }) => {
 
     const handleSearch = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/${userType}/email/${email}`);
+            const response = await axios.get(`https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/${userType}/email/${email}`);
             setSelectedUser(response.data);
             setError('');
             fetchPreviousRatings(response.data._id);
@@ -27,7 +27,7 @@ const RatingSystem = ({ currentUserId, currentUserRole }) => {
 
     const fetchPreviousRatings = async (ratedId) => {
         try {
-            const res = await axios.get(`http://localhost:5000/api/ratings/${ratedId}`);
+            const res = await axios.get(`https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/ratings/${ratedId}`);
             setPreviousRatings(res.data);
         } catch (err) {
             console.error('Error fetching ratings:', err);
