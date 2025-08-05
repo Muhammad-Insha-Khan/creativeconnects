@@ -20,7 +20,7 @@ const SellerProfileEdit = () => {
 
     const fetchProfile = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/seller/profile', {
+        const res = await fetch('https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/seller/profile', {
           method: 'GET',
           headers: {
             Authorization: `Bearer ${token}`,
