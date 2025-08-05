@@ -178,7 +178,7 @@ const SellerRegistration = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/seller/register', {
+      const response = await fetch('https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/seller/register', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
