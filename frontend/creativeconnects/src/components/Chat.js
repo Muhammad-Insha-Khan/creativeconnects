@@ -18,7 +18,7 @@ export default function Chat({ currentUserId }) {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/users");
+        const res = await axios.get("https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/users");
         console.log("Fetched users:", res.data);
         setUsers(res.data); // No filter
         setFilteredUsers(res.data);
