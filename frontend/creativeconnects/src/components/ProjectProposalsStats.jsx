@@ -10,7 +10,7 @@ const ProjectProposalsStats = () => {
     const fetchProposalCount = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:5000/api/buyer/project-proposals', {
+        const res = await axios.get('https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/buyer/project-proposals', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
