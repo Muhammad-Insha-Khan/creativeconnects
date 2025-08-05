@@ -11,7 +11,7 @@ const AllJobDiscriptionsShow = () => {
   useEffect(() => {
     const fetchJobDescriptions = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/jobs/all-job-descriptions');
+        const response = await axios.get('https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/seller/signin/api/jobs/all-job-descriptions');
         setJobDescriptions(response.data.jobDescriptions || []);
       } catch (error) {
         console.error('Error fetching job descriptions:', error);
