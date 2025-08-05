@@ -100,7 +100,7 @@ function SwapperRegistration() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/skillswapper/register', { // Update the URL based on your backend URL
+      const response = await fetch('https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/skillswapper/register', { // Update the URL based on your backend URL
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
