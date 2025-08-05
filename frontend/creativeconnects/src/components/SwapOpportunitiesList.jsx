@@ -15,7 +15,7 @@ const SwapOpportunitiesList = () => {
     const fetchOpportunities = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/skillswapper/opportunities', {
+        const response = await axios.get('https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/skillswapper/opportunities', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
