@@ -25,7 +25,7 @@ const AllProjectProposals = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     axios
-      .get('http://localhost:5000/api/buyer/all-project-proposals', {
+      .get('https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/seller/signin/api/buyer/all-project-proposals', {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(res => {
