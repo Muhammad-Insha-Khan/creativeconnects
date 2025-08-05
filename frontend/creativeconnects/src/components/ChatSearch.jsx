@@ -11,7 +11,7 @@ const ChatSearch = () => {
     const role = user?.role;
 
     try {
-      const res = await axios.post('http://localhost:5000/api/chat-search', {
+      const res = await axios.post('https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/chat-search', {
         query,
         role,
       });
