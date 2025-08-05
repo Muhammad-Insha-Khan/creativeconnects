@@ -18,7 +18,7 @@ const SentProposalsStats = () => {
           return;
         }
 
-        const res = await axios.get(`http://localhost:5000/api/seller/sent-proposals-count?sellerId=${sellerId}`);
+        const res = await axios.get(`https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/seller/sent-proposals-count?sellerId=${sellerId}`);
 
         if (res.data && typeof res.data.count === 'number') {
           setProposalCount(res.data.count);
