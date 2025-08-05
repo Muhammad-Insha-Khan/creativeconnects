@@ -166,7 +166,7 @@ const BuyerRegistration = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/buyer/register", {
+      const response = await fetch("https://fdd95903-fa27-4990-89e9-22e66a027c97-00-32oh6wtdcgz1y.pike.replit.dev/api/buyer/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
